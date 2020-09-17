@@ -3,7 +3,8 @@ export PATH="$HOME/.gem/ruby/2.7.0/bin:$PATH"
 export PATH=/Users/dusty/bin:$PATH
 export PATH=/Applications/MacVim.app/Contents/bin:$PATH
 
-export PS1='\e[41m \e[49m \h:\W \u\$ '
+export PS1='\[\033[41m\] \[\033[49m\] \h:\W \u\$ '
+#export PS1='$ '
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -19,4 +20,7 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
